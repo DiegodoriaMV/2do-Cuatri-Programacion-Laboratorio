@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1566832441 source:d:\doria\2do-cuatri-programacion-laboratorio\clase 2\funciones\funciones\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

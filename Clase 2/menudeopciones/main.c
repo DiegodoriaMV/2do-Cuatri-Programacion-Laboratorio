@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char mostrarMenu();
 int main()
 {
 
-    char opcion;
     char seguir = 's';
 
     do
     {
+    /*
     system("cls");
     printf("\nmenu de opciones \n");
     printf("\na. sumar\n");
@@ -18,8 +19,10 @@ int main()
     printf("\ne. salir\n");
     printf("\nIngrese opcion\n");
     opcion = getche();
+*/
 
-        switch(opcion)
+
+        switch(mostrarMenu())
         {
         case 'a':
             printf("\nSUMASTE\n");
@@ -39,7 +42,8 @@ int main()
             break;
         case 'e':
             printf("\nsaliste\n");
-            seguir = 'n';
+            fflush(stdin);
+            seguir = getche();
             system("pause");
             break;
 
@@ -51,3 +55,15 @@ int main()
 
     return 0;
 }
+
+char mostrarMenu()
+{
+
+char opcion;
+    system("cls");
+    printf("\n ---menu de opciones-- \n \n a. sumar\n \n b. restar\n \n c. multiplicar\n \n d. dividir\n \n e. salir\n \nIngrese opcion\n");
+
+   opcion = getchar();
+   return opcion;
+}
+
